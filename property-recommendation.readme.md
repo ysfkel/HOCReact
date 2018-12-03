@@ -1,5 +1,5 @@
-# Block chain Market place
-
+# Property Recommendation
+[FEATURE DETAILS AVAILABLE ON VSTS](https://gulfnews.visualstudio.com/_search?text=property%20recommendation&type=workitem&lp=custom-Collection)
 This Feature provides a user an alternative for searching properties by presenting an interractive user interface designed to function like a chat application with predefined
 questions and options to choose from.
 
@@ -20,20 +20,20 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-   The following software will be needed to be installed on your computer inorder to run this project locally.
+   The following packages will be needed to be installed on your computer inorder to run this project locally.
 
 
-   ¬	React: Frontend framework
-[Typescript](https://www.typescriptlang.org/) - Typed superset of javascript
-[Material UI](https://material-ui.com/) - React components that implement google material ui
+[React](https://github.com/facebook/react) Frontend framework.
+[Typescript](https://www.typescriptlang.org/) - Typed superset of javascript.
+[Material UI](https://material-ui.com/) - React components that implement google material ui.
 [React CSSModules](https://github.com/gajus/react-css-modules) - 
 CSS files in which all class names and animation names are scoped locally by default.
-i.e  module bundler such as webpack to load CSS scoped to a particular document
+i.e  module bundler such as webpack to load CSS scoped to a particular document.
 
-[React  Router v4](https://github.com/ReactTraining/react-router)
-[Redux](https://github.com/reduxjs/redux)
+[React  Router v4](https://github.com/ReactTraining/react-router).
+[Redux](https://github.com/reduxjs/redux).
 [React Redux](https://github.com/reduxjs/react-redux)
-[Redux Thunk](https://github.com/reduxjs/redux-thunk) - Redux Middleware
+[Redux Thunk](https://github.com/reduxjs/redux-thunk) - Redux Middleware.
 [Redux dev tools Extension](https://www.npmjs.com/package/redux-devtools-extension) - A live-editing time travel environment for redux.
 
 [Device Detect](https://github.com/duskload/react-device-detect) - Detect device and render view according to device type.
