@@ -63,7 +63,7 @@ start the local host by running
 
 ## Project Description
  
- ###Folder Structure
+ ### Folder Structure
   Files are grouped according to feature, Inorder to define a scalable folder structure. 
      
   #### Property Recommendation
