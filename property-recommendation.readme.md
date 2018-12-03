@@ -87,6 +87,30 @@ start the local host by running
      |___Search-Result
      |
      |___Landing
+  
+  #### Conversation
+     |
+     |___Components
+     |	
+     |___State-manager
+     |
+     |___types
+     |
+     |___constants
+  
+  #### Conversation State manager
+
+    The state manager consists of Action creators, middleware (redux thunk) , reducer and state
+
+    State-manager
+    |
+    |___search-criteria
+    |
+    |___user
+    |
+    |___view
+
+
 
 
 
