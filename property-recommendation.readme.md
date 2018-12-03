@@ -188,9 +188,35 @@ start the local host by running
     |___search-result.container
 
 
+##Description.
+  The conversation view consists of sub components / view each respresenting a ui components that prompt the user to enter a search criteria.
+  each search criteria consists of 3 components.
 
+  * prompt.component - Renders a prompt on the UI that queries the user to enter a search  criteria
+  * option.component - renders ui elements that provide options for the user to select in response to the question contained in the prompt.component component.
+  * Select.component - This component renders the users selected option.
+  Prompt.component
 
+    
 
+       are the subcomponents on the conversation view. Each subcomponent directory consists of 3 components and  represents one stage of the conversation and can be in any of 3 states.
+      Eg
+      The NearBy component consists of 
+      option.component, 
+      prompt.component and 
+      select.component , 
+
+      and the component states are 
+
+      editing : true or false
+      selecting: true or false
+      selected: true or false
+
+      App states and Types
+      View State 
+      Used on the conversation component to manage the state of each conversation components  conversation components to render on the UI, 
+
+      ViewStateType: Defines the conversation component states
 
 
 ## Running the application
