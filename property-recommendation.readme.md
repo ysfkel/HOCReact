@@ -214,74 +214,65 @@ start the local host by running
 #### Selected mode:
   This mode is enabled when the user has selected a choice in response to a question. This unloads the options.component of and loads the selected.component for a particular question in the conversation
 
+#### View State 
+  Used on the conversation components to manage the state of each conversation component
+  i.e editting, selecting or selected.
 
-### Types
 
+## Types
 
-## Running the application
+#### ViewStateType: Defines the ViewState type 
 
-  to test the application
-  you should have 3 accounts from the ganache cli
-  
-  Choose and account for each role that you will test
-  - Owner -  deploying accont -  
-             click on manage tokens menu tab to enter amount to tokens to sell to customers
-  - Vendor: use the account you choose for this role to request a venodr account,
-            then switch to the owner account using meta mask, and approve the vendor request
-            switch back to the vendor account to create stores and add products
-            
-  - customer: use this account to test purchasing of items 
-               select any store, and , click on the products list 
-               select a product and enter quantity and add to cart
-               
+  interface ViewStateType {
+      editing :  boolean;   // true if the component is in edit mode
+      selecting: boolean; // true if the component is in selecting mode
+      selected: boolean; // true if the component is in selected mode
+      name: string // name of component
+  }
 
-### Running tests
+#### PropertyRecommendationViewStateType 
+ This type consists of properties that represent each search criteria  component view  state and controls which search criteria component to render on the UI.
 
- This project constaians a suite of tests that verify the functionality of the contracts code
- 
- These tests cover the following contracts
- -OrderHIstoryManager: Tests verify if the customers order is archived in order history after purchase is completed
- -ProductManager: Tests the functionality of adding, updtating and deleting products
- -ShoppingCartManager: Test the functionality of adding item to a cart, updating, deleting an item and completing purchase
-                        as well is products quantity reduction and payment made to the respective vendors
- -SpinelToken: Tests the functionality of the ERC20 TOKEN
- -SpinelTokenSale: Tests the functionality of allowing users to buy Tokens
- -StoreManager: Tests the functionality of the StoreMnager -  Adding, editting and deleting stores 
- -VendorManager: Tests the functionality of VendorManager which allows admin/owner to manage vendors
- -Withdrawable: Tests the functionality of allowing vendors to move funds to their wallet
- 
- 
+    interface PropertyRecommendationViewStateType {
 
-```
-Give an example
-```
+          OwnershiptTypeViewState: ViewStateType;
+          NearByViewStatet: ViewStateType;
+          LocationViewState: ViewStateType;
+          TravelTimeViewState: ViewStateType;
+          TravelModeViewState: ViewStateType;
+          NumberOfBedRoomViewState: ViewStateType;
+          PropertyTypeViewState: ViewStateType;
+          BudgetViewState: ViewStateType; 
+          FurnishingViewState: ViewStateType; 
+          SpecialCareViewState: ViewStateType;
+          AmenityViewState:  ViewStateType;
+          BreakPointViewState: ViewStateType
+          Editting: EditStateType
+          NextView: NextViewType
+          CurrentView: CurrentViewType
+          CurrentAppView: string
+          CurrentResultView: string
+          drawerState: boolean
+    }
 
-### And coding style tests
+#### PropertyRecommendationCriteriaType
+  This interface defines the search criteria state which stores the users selections from the search criteria View options
 
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Truffle](https://truffleframework.com/) - Truffle Framework
-* [React](https://reactjs.org/) - UI Library
-* [Solidity](https://solidity.readthedocs.io/en/v0.4.24/) - Programming language
-* [Ethereum](https://www.ethereum.org/) - Blockchain Protocol
-* [IPFS](https://rometools.github.io/rome/) - decentralized file storage
-
- 
+  interface PropertyRecommendationCriteriaType {
+      ownershipType: string
+      nearby: string
+      location: LocationType 
+      travelTime: number
+      travelMode: string
+      numberOfBedRoom: number | null
+      propertyTypes: Array<string>
+      budget: number | null
+      furnishing: string
+      specialCare: string
+      amenities: Array<string>
+   }
 
 ## Authors
 
-* **Yusuf Kelo** - *Initial work* - [Blockchain-Market-Place](https://github.com/ysfkel/Blockchain-Market-Place)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
+* **DMU GULGNEWS** 
 
