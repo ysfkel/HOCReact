@@ -256,21 +256,21 @@ start the local host by running
     }
 
 #### PropertyRecommendationCriteriaType
-  This interface defines the search criteria state which stores the users selections from the search criteria View options
+  This interface defines the search criteria state which stores the users selections from the search criteria View options.
 
-  interface PropertyRecommendationCriteriaType {
-      ownershipType: string
-      nearby: string
-      location: LocationType 
-      travelTime: number
-      travelMode: string
-      numberOfBedRoom: number | null
-      propertyTypes: Array<string>
-      budget: number | null
-      furnishing: string
-      specialCare: string
-      amenities: Array<string>
-   }
+    interface PropertyRecommendationCriteriaType {
+        ownershipType: string
+        nearby: string
+        location: LocationType 
+        travelTime: number
+        travelMode: string
+        numberOfBedRoom: number | null
+        propertyTypes: Array<string>
+        budget: number | null
+        furnishing: string
+        specialCare: string
+        amenities: Array<string>
+    }
 
 ## Authors
 
