@@ -188,35 +188,34 @@ start the local host by running
     |___search-result.container
 
 
-##Description.
-  The conversation view consists of sub components / view each respresenting a ui components that prompt the user to enter a search criteria.
+## Description.
+  The conversation view consists of sub components  each respresenting a search criteria. 
   each search criteria consists of 3 components.
 
   * prompt.component - Renders a prompt on the UI that queries the user to enter a search  criteria
   * option.component - renders ui elements that provide options for the user to select in response to the question contained in the prompt.component component.
   * Select.component - This component renders the users selected option.
   Prompt.component
+ 
+  Each component can be in either of 3 states
 
-    
+  * editing : true or false  -  true if the component is in edit mode
+  * selecting: true or false -  true if the component is in selecting mode
+  * selected: true or false  -  true if the component is in selected mode
 
-       are the subcomponents on the conversation view. Each subcomponent directory consists of 3 components and  represents one stage of the conversation and can be in any of 3 states.
-      Eg
-      The NearBy component consists of 
-      option.component, 
-      prompt.component and 
-      select.component , 
+#### Editing mode
+  This mode is enabled when the user clicks on his response to a question in order to change his / her choice. This action sets editing = true by dispatching an action to the redux store via the edit() action dispatcher.
+  This action loads the options.component for the specified question in order for the user to select a different option
 
-      and the component states are 
+#### Selecting mode:
+  This mode is enabled when the question is loaded for the first time in the conversation and the user has not yet made his / her selection. 
+  When this attribute is set to true for a given question. The components options.component and promt.component for that question are rendered on the UI. When the user makes a selection this attribute is set to false to unload the options.component from the UI and load selected.component (which shows the users selection) into  the UI. 
 
-      editing : true or false
-      selecting: true or false
-      selected: true or false
+#### Selected mode:
+  This mode is enabled when the user has selected a choice in response to a question. This unloads the options.component of and loads the selected.component for a particular question in the conversation
 
-      App states and Types
-      View State 
-      Used on the conversation component to manage the state of each conversation components  conversation components to render on the UI, 
 
-      ViewStateType: Defines the conversation component states
+### Types
 
 
 ## Running the application
