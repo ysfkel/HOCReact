@@ -1,6 +1,8 @@
 # Block chain Market place
 
-This project is a ecommerce website. The application serves 3 sets of users
+This Feature provides a user an alternative for searching properties by presenting an interractive user interface designed to function like a chat application with predefined
+questions and options to choose from.
+
 
   -  Owner: The owner of the application manages the users.
   -  User : A user is a visitor of the website.
@@ -19,26 +21,35 @@ These instructions will get you a copy of the project up and running on your loc
 ### Prerequisites
 
    The following software will be needed to be installed on your computer inorder to run this project locally.
+
+
+   ¬	React: Frontend framework
+[Typescript](https://www.typescriptlang.org/) - Typed superset of javascript
+[Material UI](https://material-ui.com/) - React components that implement google material ui
+[React CSSModules](https://github.com/gajus/react-css-modules) - 
+CSS files in which all class names and animation names are scoped locally by default.
+i.e  module bundler such as webpack to load CSS scoped to a particular document
+
+[React  Router v4](https://github.com/ReactTraining/react-router)
+[Redux](https://github.com/reduxjs/redux)
+[React Redux](https://github.com/reduxjs/react-redux)
+[Redux Thunk](https://github.com/reduxjs/redux-thunk) - Redux Middleware
+[Redux dev tools Extension](https://www.npmjs.com/package/redux-devtools-extension) - A live-editing time travel environment for redux.
+
+[Device Detect](https://github.com/duskload/react-device-detect) - Detect device and render view according to device type.
+
+[Google maps](https://developers.google.com/maps/documentation/javascript/reference/)
+[Leaflet](https://github.com/Leaflet/Leaflet) - Leaflet is the leading open-source JavaScript library for mobile-friendly interactive maps.
+
+[React leaflet](https://github.com/PaulLeCam/react-leaflet) -React-Leaflet provides an abstraction of leaflet as react components.
+
+[React leaflet google](https://github.com/Charmatzis/react-leaflet-google) -  Google maps layer as React component for Leaflet build on top of React-Leaflet.
+
  
- [NodeJS ](https://nodejs.org/en/download/) 
- 
- [Ganache clic](https://github.com/trufflesuite/ganache-cli) - personal blockchain for Ethereum development
-   
-```
-  npm install -g ganache-cli
-```
-
-[Truffle ](https://github.com/trufflesuite/truffle) - Truffle is a development environment
-
-```
- $ npm install -g truffle
-```
-
 ### Installing
-clone the project to a folder on your computer
 
 ```
-git clone https://github.com/ysfkel/Blockchain-Market-place.git
+git clone https://gulfnews.visualstudio.com/Getthat-VSTS/_git/getThat-Frontend
 ```
 
 cd into the folder install dependencies by running the following
@@ -47,10 +58,10 @@ cd into the folder install dependencies by running the following
 npm install
 ```
 
-start the local blockchain by running the following command in a command line
+start the local host by running
 
 ```
- ganache-cli
+ npm start
 ```
 Before the next step, 
 open the migrations folder , in the contracts migration file replace the 'OWNER' variable
