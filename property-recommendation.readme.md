@@ -62,6 +62,33 @@ start the local host by running
 ```
 
 ## Project Description
+ 
+ ###Folder Structure
+  Files are grouped according to feature, Inorder to define a scalable folder structure. 
+     
+  #### Property Recommendation
+     |
+     |____assets
+     |              
+     |____common
+     |            
+     |____components
+     |
+     |____repo
+     |
+     |___Others
+
+  #### Components 
+     |
+     |___app-bar
+     |
+     |___Conversation
+     |
+     |___Search-Result
+     |
+     |___Landing
+
+
 
 ## Running the application
 
