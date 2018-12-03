@@ -272,6 +272,65 @@ start the local host by running
         amenities: Array<string>
     }
 
+#### PropertyType
+   Defines interface for property to be retrieved from search
+   
+    interface PropertyType {
+        imagesProcessed: boolean;
+        amenities: string[];
+        offeringType: string;
+        city: string;
+        advID: string;
+        description: string;
+        advType: string;
+        title: string;
+        blueFlag: boolean;
+        createdOn: Date;
+        expiryDate: number;
+        geoPoints: string;
+        lastUpdated: Date;
+        serviceCharge: number;
+        furnished: string;
+        referenceNumber: string;
+        propertyType: string;
+        _geoloc: Geoloc;
+        plotSize: number;
+        propertyCategory: string;
+        bathroom: string;
+        adVertical: string;
+        propertyAgent: PropertyAgent;
+        sizeUnits: string;
+        images: Image[];
+        rentalPeriod: string;
+        greyFlag: boolean;
+        imagesForApproval: any[];
+        community: string;
+        boostDT: Date;
+        subCommunity: string;
+        bedroom: number;
+        advStatus: string;
+        permitNumber: string;
+        priceCurrency: string;
+        advRefID: string;
+        fromTrustedPartner: boolean;
+        lastUpdate: string;
+        cheques: number;
+        sellerType: string;
+        boostTS: number;
+        toBePublished: boolean;
+        status: string;
+        ownerID: string;
+        priceAsText: string;
+        sizeAsText: string;
+        createdOnTS: number;
+        isVisible: boolean;
+        modQueueTopic: string;
+        price: number;
+        size: number;
+        objectID: string;
+    }
+
+
 ## Authors
 
 * **DMU GULGNEWS** 
