@@ -110,6 +110,85 @@ start the local host by running
     |
     |___view
 
+  #### Search criteria  (state manager)
+    |
+    |___action-creator   - 
+    |
+    |___action-creator.types
+    |
+    |___action.types
+    |
+    |___helpers
+    |
+    |___reducer
+    |
+    |___state
+
+
+  #### Conversation Components
+    |
+    |___amenity
+    |
+    |__break-point
+    |
+    |___furnishing
+    |
+    |___nearBy
+    |
+    |___number-of-bedroom
+    |
+    |___ownershi-type
+    |
+    |___property-type
+    |
+    |___special-care
+    |
+    |___travel-time
+
+  ### Amenity
+    |
+    |___option
+    |       |
+    |       |___option.component
+    |       |
+    |       |___helper
+    |       |
+    |       |___constants
+    |
+    |
+    |
+    |___prompt
+    |     |
+    |     |___prompt.component
+    |
+    |
+    |
+    |___selected
+            |
+            |___selected.component
+
+  #### Search Result Components
+    |
+    |___item-detail-summary
+    |
+    |___map
+    |     |
+    |     |___google-map-autocomplete.tsx
+    |     |	
+    |     |___map.component.tsx
+    |     |
+    |     |___places.autocomplete.tsx
+    |
+    |___result-filter
+    |
+    |___search-result-header
+    |
+    |___state-manager
+    |
+    |___search-result.container
+
+
+
 
 
 
