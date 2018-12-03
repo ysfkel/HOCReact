@@ -3,6 +3,11 @@
 This Feature provides a user an alternative for searching properties by presenting an interractive user interface designed to function like a chat application with predefined
 questions and options to choose from.
 
+## URL
+* stating: https://stg.getthat.com/property-recommendation#/
+
+* production: https://getthat.com/property-recommendation#/
+
 Consists of three main views
 
   -  Landing: welcome page 
@@ -13,7 +18,7 @@ Consists of three main views
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development. 
 
 ### Prerequisites
 
@@ -274,7 +279,7 @@ start the local host by running
 
 #### PropertyType
    Defines interface for property to be retrieved from search
-   
+
     interface PropertyType {
         imagesProcessed: boolean;
         amenities: string[];
