@@ -3,15 +3,12 @@
 This Feature provides a user an alternative for searching properties by presenting an interractive user interface designed to function like a chat application with predefined
 questions and options to choose from.
 
+Consists of three main views
 
-  -  Owner: The owner of the application manages the users.
-  -  User : A user is a visitor of the website.
-  -  Vendor: A vendor is a user that has been approved by the owner to create and manage stores 
-     and sell products
+  -  Landing: welcome page 
+  -  Conversation : An interractive user interface which a behaves like a chat ui with predefined questions and options to collect user search criteria.
+  -  search result: A user interface to display the search result, map view and list view.
 
- The project is a  decentralized ecommerce application. Designed to run on the ethereum blockchain
- The project is build using the solidity programming language for the smart contracts.
- the client side application is a truffle project which uses react  to render the user interface
  
 
 ## Getting Started
@@ -63,21 +60,8 @@ start the local host by running
 ```
  npm start
 ```
-Before the next step, 
-open the migrations folder , in the contracts migration file replace the 'OWNER' variable
-with an account from  truffle cli that you choose to deploy the contracts with
 
-Compile and migrate the smart contracts to the local blockchain
-
-```
- truffle compile
-```
-
-```
- truffle migrate
-```
-
-
+## Project Description
 
 ## Running the application
 
